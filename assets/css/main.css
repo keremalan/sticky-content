@@ -100,7 +100,7 @@
 .hs_input {
     min-height: 40px;
     border-radius: 30px;
-    padding-left: 12px;
+    padding: 0 12px;
 }
 
 .category_name {
