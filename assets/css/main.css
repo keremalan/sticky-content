@@ -3,6 +3,12 @@
     flex-direction: row;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .flex {
     display: flex;
 }
@@ -128,6 +134,11 @@
 
 .cn_sub_item {
     opacity: 0.5;
+}
+
+.p_info {
+    width: 600px!important;
+    margin-bottom: 400px;
 }
 
 .pi_title {
@@ -275,4 +286,13 @@
     font-size: 2.4rem;
     text-align: center;
     justify-content: center;
+}
+
+.p_gallery > img:not(.pg_img--last) {
+    margin-bottom: 16px;
+}
+
+footer {
+    height: 200px;
+    background-color: #F6F6F8;
 }

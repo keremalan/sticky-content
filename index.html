@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.smartSticky.min.js"></script>
+    <link rel="stylesheet" href="assets/css/smartsticky.min.css">
+    <script src="assets/js/jquery.stuck.js"></script>
 </head>
 <body>
     <header>
@@ -56,10 +60,12 @@
     </section>
     <main>
         <div class="product flex-row">
-            <div class="p_gallery safe-area-content safe-area-content-vertically">
+            <div class="p_gallery safe-area-content safe-area-content-vertically flex-column">
                 <img src="assets/images/products/gallardo/pg-gallardo-00.png" alt="" class="pg_img">
+                <img src="assets/images/products/gallardo/pg-gallardo-00.png" alt="" class="pg_img">
+                <img src="assets/images/products/gallardo/pg-gallardo-00.png" alt="" class="pg_img pg_img--last">
             </div>
-            <div class="p_info safe-area-content-vertically">
+            <div class="p_info safe-area-content-vertically stuck">
                 <h3 class="pi_title">Gallardo</h3>
                 <span class="pi_first_review inline-block">Be the first to review this product</span>
                 <h3 class="pi_price">£4,199.00</h3>
@@ -126,5 +132,12 @@
             </div>
         </div>
     </main>
+    <footer>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $(window).stuck();
+        });
+    </script>
 </body>
 </html>
